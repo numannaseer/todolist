@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----main css---->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-----font awesome---->
+    <script
+      src="https://kit.fontawesome.com/b862bb0d81.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-----main script----->
+    <script defer src="./script.js"></script>
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <header></header>
+    <!---------------------------------------Main Content------------------------------------------------------>
+    <section class="list-container">
+      <div class="container">
+        <h2>
+          <span> To do List</span>
+          <input type="checkbox" id="switch" /><label
+            class="switch-label"
+            for="switch"
+            >Toggle</label
+          >
+        </h2>
+        <div class="list">
+          <div class="list-item">
+            <input placeholder="Add a task to the List..." type="text" />
+            <i class="fas fa-plus"></i>
+          </div>
+          <ol class="todo-list">
+            <div class="taskbar list-item">
+              <div>5 Items left</div>
+              <div style="display: flex">
+                <div class="active" id="all">All</div>
+                <div id="pending">Pending</div>
+                <div id="complete">Completed</div>
+              </div>
+              <div class="clear">Clear</div>
+            </div>
+            <div class="items"></div>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------End of Main Content---------------------------------------------------------------------->
+    <!--------------------------------------Footer-------------------------------------------------------------------->
+    <footer>
+      <div>
+        <a href="#!"> <span style="color: black">©</span> Numan Naseer</a>
+      </div>
+      <div>
+        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/numannaseer"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <a href="https://github.com/numannaseer">
+          <i class="fa fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <!----------------------------------------End of Footer-------------------------------------------------------------------->
+  </body>
+</html>
